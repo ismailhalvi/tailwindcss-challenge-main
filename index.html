@@ -1,0 +1,3269 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر كونسول || الرئيسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="icon" href="dist/assets/images/logo22.png" type="image/x-icon">
+  <link rel="stylesheet" href="dist/assets/css/style.css">
+ <link rel="stylesheet" href="dist/assets/css/style.css">
+  </head>
+
+
+<body class=" bg-[#f6f5f8] font-sans" style="font-family: 'Cairo', sans-serif;">
+
+
+<!-- start mobile header  -->
+  <header class="bg-[#0d0625] block md:hidden p-3">
+    <div class="flex items-center justify-between">
+
+      <!-- Login for mobile -->
+      <div class="login md:hidden">
+
+
+        <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+        <button command="show-modal" commandfor="mobile" class="rounded-md ">
+          <i class="fa-regular fa-user text-white hover:text-white/80 transition all ease-in-out duration-300"></i>
+          <span class="text-white hover:text-white/80 transition all ease-in-out duration-300 font-semibold">
+          </span>
+
+        </button>
+        <el-dialog>
+          <dialog id="mobile" aria-labelledby="mobile-title"
+            class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent not-open:hidden backdrop:bg-transparent">
+            <el-dialog-backdrop
+              class="absolute inset-0 bg-gray-900/50 transition-opacity duration-500 ease-in-out data-closed:opacity-0"></el-dialog-backdrop>
+
+            <div tabindex="0" class="absolute inset-0 pl-10 focus:outline-none sm:pl-16">
+              <el-dialog-panel
+                class="group/dialog-panel relative ml-auto block size-full max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700">
+                <!-- Close button, show/hide based on slide-over state. -->
+                <div
+                  class="absolute top-0 left-0 -ml-8 flex pt-4 pr-2 duration-500 ease-in-out group-data-closed/dialog-panel:opacity-0 sm:-ml-10 sm:pr-4">
+                  <button type="button" command="close" commandfor="mobile"
+                    class="relative rounded-md text-gray-400 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                    <span class="absolute -inset-2.5"></span>
+                    <span class="sr-only">Close panel</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                      aria-hidden="true" class="size-6">
+                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div
+                  class="relative flex h-full flex-col overflow-y-auto bg-white py-6 shadow-xl after:absolute after:inset-y-0 after:left-0 after:w-px after:bg-white/10">
+                  <div class="px-4 sm:px-6">
+                    <h2 id="mobile-title" class="text-base font-semibold text-black">تسجيل الدخول</h2>
+
+                  </div>
+                  <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                    <!-- المحتوى -->
+                    <div class="mt-2 flex items-start flex-col gap-4 ">
+                      <div class="user-name-or-email flex flex-col">
+                        <h3 class="mb-2 text-[#55555]">اسم المستخدم او البريد الالكتروني:</h3>
+                        <input type="text" class="rounded-full text-[#55555] bg-[#f1f1f1] p-2 px-5 w-[400px]">
+                      </div>
+
+                      <div class="password flex flex-col">
+                        <h3 class="mb-2 text-[#55555]">كلمة المرور:</h3>
+                        <input type="password" class="rounded-full text-[#55555] bg-[#f1f1f1] p-2 px-5 w-[400px]">
+                        <button
+                          class="bg-[#6D4FE3] text-white font-bold px-6 py-2 rounded-full hover:bg-[#e14a5c]/80 transition-colors mt-4 w-[400px]">تسجيل
+                          الدخول</button>
+                      </div>
+                    </div>
+                    <div class="remember-me-forget-password flex gap-2 justify-between items-center mt-5">
+                      <div>
+                        <input type="checkbox" class="w-4 h-4">
+                        <span class="text-[#55555]">تذكرني</span>
+                      </div>
+                      <div>
+                        <span class="pl-2 text-red-600 ">نسيت كلمة المرور</span>
+                      </div>
+
+                    </div>
+
+                    <div class="register-now flex flex-col items-center mt-5">
+                      <span class="text-[#55555]">ليس لديك حساب؟</span>
+                      <button
+                        class="bg-[#6D4FE3] text-white font-bold px-6 py-2 rounded-full hover:bg-[#e14a5c]/80 transition-colors mt-4 w-[400px]">انشاء
+                        حساب</button>
+                    </div>
+                  </div>
+                </div>
+              </el-dialog-panel>
+            </div>
+          </dialog>
+        </el-dialog>
+
+      </div>
+
+
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2">
+        <img src="dist/assets/images/logo22.png" alt="logo" class="w-10">
+        <span class="text-white font-semibold text-lg">كونسول</span>
+      </a>
+
+
+      <!-- Menu Icon -->
+
+
+      <!-- زر القائمة -->
+      <button id="mobile-menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden 
+  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 
+  dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+
+      <!-- القائمة المنبثقة (Overlay) -->
+      <div id="mobile-menu" class="hidden fixed inset-0 bg-black/50 z-50 md:hidden transition-opacity duration-300">
+
+        <!-- المحتوى نفسه تبع navbar -->
+        <div id="menu-panel" class="bg-white w-[80%] h-full absolute right-0 top-0 p-6 overflow-y-auto shadow-xl
+  transform translate-x-full transition-transform duration-300 ease-in-out">
+
+          <!-- زر إغلاق -->
+          <button id="close-menu" class="text-gray-600 mb-4">
+            ✕
+          </button>
+
+          <ul class="font-medium flex flex-col gap-2">
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">من نحن</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">شركاؤنا</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">اعمل معنا</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">تتبع طلبك</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">تواصل معنا</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">الأسئلة الشائعة</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">المفضلة</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">الإلكترونيات</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">المنزل والحديقة</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">الأطفال والرضع</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">الجمال والعناية</a></li>
+            <li><a href="#" class="block py-2 px-3 rounded hover:bg-gray-100">الأجهزة المنزلية</a></li>
+          </ul>
+          </>
+        </div>
+
+
+      </div>
+
+  </header>
+
+
+
+
+
+  <!-- start header  -->
+  <header class="bg-[#0d0625] hidden md:block">
+    <div class="container mx-auto p-2">
+
+      <!-- Top Header -->
+      <div
+        class="top-header flex flex-col sm:flex-row justify-between items-center p-2 border-b border-gray-500 text-white text-sm gap-2">
+        <div class="right-top flex gap-4">
+          <a href="/about-us.html" class="hover:text-white/80 transition duration-300 ease-in-out">من نحن</a>
+          <a href="/ourpartners.html"
+            class="border-r pr-3 border-gray-500 hover:text-white/80 transition duration-300 ease-in-out">شركائنا</a>
+          <a href="/work-with-us.html"
+            class="border-r pr-3 border-gray-500 hover:text-white/80 transition duration-300 ease-in-out">اعمل معنا</a>
+        </div>
+
+        <div class="left-top flex gap-4 mt-2 sm:mt-0">
+          <a href="/order-you.html" class="hover:text-white/80 transition duration-300 ease-in-out">تتبع طلبك</a>
+          <a href="/contact-us.html"
+            class="border-r pr-3 border-gray-500 hover:text-white/80 transition duration-300 ease-in-out">تواصل معنا</a>
+          <a href="/faqs.html"
+            class="border-r pr-3 border-gray-500 hover:text-white/80 transition duration-300 ease-in-out">الاسئلة
+            الشائعة</a>
+        </div>
+      </div>
+
+      <!-- Middle Header -->
+      <div class="middle flex flex-col md:flex-row justify-between items-center gap-3 py-2">
+
+        <!-- Logo -->
+        <div class="logo flex items-center gap-2">
+          <a href="/"><img class="w-12 md:w-16" src="dist/assets/images/logo22.png" alt="logo"></a>
+          <span class="text-white font-bold text-xl md:text-2xl">متجر كونسول</span>
+        </div>
+
+        <!-- Search -->
+        <div class="search relative w-full md:w-[800px] mt-2 md:mt-0">
+          <input class="w-full p-2 rounded-full text-white bg-white focus:outline-none" type="search" placeholder="بحث">
+          <i
+            class="fa-solid fa-magnifying-glass absolute text-white bg-[#e14a5c] rounded-full  left-2 top-[5px] p-2 w-8 h-8 cursor-pointer hover:text-white/80 transition all ease-in-out duration-300 "></i>
+        </div>
+
+        <!-- Support & Cart -->
+        <div class="left-middle flex flex-col sm:flex-row items-center gap-2 mt-2 md:mt-0 text-white">
+
+          <!-- Support -->
+          <div class="support flex gap-1 items-center">
+            <i class="fa-solid fa-phone text-xl"></i>
+            <div class="text text-sm">
+              <span>الدعم الفني 24/7</span>
+              <p class="text-gray-400 text-xs">0543 334 49 79</p>
+            </div>
+          </div>
+
+          <!-- Cart -->
+          <div class="cart flex gap-1 items-center">
+            <i class="fa-solid fa-cart-shopping text-xl border-l border-gray-500 pl-[30px]"></i>
+            <div class="text text-sm gap-1">
+              <span class="text-[#e14a5c] pl-2">السلة</span>
+              <p class="text-gray-400 text-xs">0</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <nav class="navbar bottom-header bg-white border-gray-200 dark:bg-[#e14a5c] hidden md:block">
+
+
+    <div class="container mx-auto px-2 flex items-center justify-between gap-2">
+
+      <!-- start drops  -->
+      <div class="all-drops flex items-center">
+
+
+        <!-- drop 1 -->
+        <div class="d">
+          <div class="flex items-center">
+
+            <i class="fa-solid fa-laptop text-white pr-3"></i>
+
+            <button class="d-btn"> <i class=" text-[12px] fa-solid fa-chevron-down text-white "></i>
+
+
+              <a class="a-tran font-semibold " href="/electronics.html">الالكترونيات</a>
+
+            </button>
+
+          </div>
+
+          <div class="d-content">
+            <div class="row ">
+              <div class="column">
+                <h3 class="text-white font-semibold ">الكمبيوترات</h3>
+                <a href="">اجهزة الكمبيوتر</a>
+                <a href="">مكونات الكمبيوتر</a>
+                <a href=""> معدات الشبكة</a>
+              </div>
+              <div class="column">
+                <h3 class="text-white font-semibold">الألعاب</h3>
+                <a href="">أجهزة الألعاب</a>
+                <a href="">الألعاب الالكترونية</a>
+                <a href="">لابتوبات الالعاب</a>
+              </div>
+              <div class="column">
+                <h3 class="text-white font-semibold">الهواتف</h3>
+                <a href="">ايفون</a>
+                <a href="">هواتف سامسونغ</a>
+                <a href="">الساعات الذكية</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- drop 1 -->
+
+
+
+        <!-- drop 2 -->
+
+        <div class="d">
+          <div class="flex items-center">
+            <i class="fa-regular fa-house text-white text-sm pr-5"></i>
+
+            <button class="d-btn">
+
+              <i class=" text-[12px] fa-solid fa-chevron-down text-white"></i>
+
+              <a class="a-tran font-semibold " href="/appliances.html ">الاجهزة المنزلية</a>
+
+            </button>
+          </div>
+
+
+
+
+          <div class="d-content">
+            <div class="row ">
+              <div class="column">
+                <h3 class="text-white font-semibold">الغسيل</h3>
+                <a href="">مجففات الملابس</a>
+                <a href="">غسالات ومجففات</a>
+                <a href="">الغسالات</a>
+              </div>
+              <div class="column">
+                <h3 class="text-white font-semibold"> الأجهزة الصغيرة للمطبخ</h3>
+                <a href="">الخلاطات</a>
+                <a href="">مكونات المطبخ</a>
+                <a href="">مجففات المطبخ</a>
+              </div>
+              <div class="column">
+                <h3 class="text-white font-semibold">العناية والتنظيف</h3>
+                <a href="">المكانس الكهربائية</a>
+                <a href="">مكواة</a>
+                <a href="">التنظيف</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- drop 2 -->
+
+
+
+        <!-- drop3-->
+
+        <div class="d">
+
+          <div class="flex items-center">
+
+            <i class="fa-solid fa-leaf text-white text-sm pr-5"></i>
+
+            <button class="d-btn"> <a class="a-tran font-semibold " href="/homegardan.html">المنزل والحديقة</a>
+              <i class=" text-[12px] fa-solid fa-chevron-down text-white"></i>
+
+            </button>
+
+          </div>
+
+
+          <div class="d-content">
+            <div class="row ">
+              <div class="column">
+                <h3 class="text-white font-semibold">الكراسي والأرائك</h3>
+                <a href="">الكراسي الفردية</a>
+                <a href="">الكراسي المريحة</a>
+                <a href="">الأرائك الصغيرة</a>
+              </div>
+              <div class="column">
+                <h3 class="text-white font-semibold">خزانات الأحذية</h3>
+                <a href="">الأسرة</a>
+                <a href="">مساند الأقدام</a>
+                <a href="">أسِرَّة النهار</a>
+              </div>
+              <div class="column">
+                <h3 class="text-white font-semibold">كراسي الطعام</h3>
+                <a href="">الشاي والقهوة</a>
+                <a href="">أغطية الطاولات</a>
+                <a href="">الأدوات الزجاجية</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- drop 3 -->
+
+
+        <!-- drop 4 -->
+
+
+        <div class="d">
+          <div class="flex items-center">
+
+            <i class="fa-solid fa-child text-white text-sm pr-[20px]"></i>
+
+            <button class="d-btn"> <a class="a-tran font-semibold " href="/baby-kids.html">الاطفال والرضع</a>
+              <i class=" text-[12px] fa-solid fa-chevron-down text-white"></i>
+
+
+            </button>
+
+
+          </div>
+
+
+
+
+          <div class="d-content">
+            <div class="row ">
+              <div class="column">
+                <h3 class="text-white font-semibold">لبس الاطفال</h3>
+                <a href="">خلطات الأطفال</a>
+                <a href="">حبوب الأطفال</a>
+                <a href="">اللهابات</a>
+              </div>
+              <div class="column">
+                <h class="text-w font-semibold" 3>اطقمة الرضع</h3>
+                  <a href="">اكسسوارات الرضع</a>
+                  <a href="">مكونات الرضع</a>
+                  <a href=""> مجففات الرضع</a>
+              </div>
+              <div class="column">
+                <h3 class="text-w font-semibold">العاب الاطفال</h3>
+                <a href="">اجهزة الاثائر</a>
+                <a href="">سيارات </a>
+                <a href="">الساعات الذكية</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- drop 4 -->
+
+
+
+        <!-- drop 5 -->
+        <div class="d">
+          <div class="flex items-center">
+            <i class="fa-solid fa-spa text-white text-sm pr-4"></i>
+            <button class="d-btn">
+
+              <a class="a-tran font-semibold " href="/beautycare.html">الجمال والعناية</a>
+              <i class=" text-[12px] fa-solid fa-chevron-down text-white"></i>
+            </button>
+
+
+          </div>
+
+          <div class="d-content">
+            <div class="row ">
+              <div class="column">
+                <h3 class="text-black font-semibold">الشعر</h3>
+                <a href="">البلسم</a>
+                <a href=""> أقنعة الشعر</a>
+                <a href="">لعناية بفروة الرأس</a>
+              </div>
+              <div class="column">
+                <h3 class="text-black font-semibold">العطور</h3>
+                <a href="">عطور النساء</a>
+                <a href="">عطور للمنزل</a>
+                <a href=""> عطور للجنسين</a>
+              </div>
+              <div class="column">
+                <h3 class="text-black font-semibold">الواقي من الشمس</h3>
+                <a href="">بعد التعرض للشمس</a>
+                <a href="">واقي الجسم من الشمس</a>
+                <a href=""> واقي الوجه من الشمس</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- drop 5 -->
+
+
+      </div>
+
+      <!-- start login and fav  -->
+      <div class="flex items-center gap-2">
+        <div class="fav">
+          <a href="/wishlist.html">
+            <i class="fa-regular fa-heart text-white hover:text-white/80 transition all ease-in-out duration-300"></i>
+            <span
+              class="text-white hover:text-white/80 transition all ease-in-out duration-300 font-semibold">المفضلة</span>
+
+          </a>
+        </div>
+        <div class="login">
+
+          <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+          <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+          <button command="show-modal" commandfor="drawer" class="rounded-md ">
+            <i class="fa-regular fa-user text-white hover:text-white/80 transition all ease-in-out duration-300"></i>
+            <span class="text-white hover:text-white/80 transition all ease-in-out duration-300 font-semibold">تسجيل
+              الدخول</span>
+
+          </button>
+          <el-dialog>
+            <dialog id="drawer" aria-labelledby="drawer-title"
+              class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent not-open:hidden backdrop:bg-transparent">
+              <el-dialog-backdrop
+                class="absolute inset-0 bg-gray-900/50 transition-opacity duration-500 ease-in-out data-closed:opacity-0"></el-dialog-backdrop>
+
+              <div tabindex="0" class="absolute inset-0 pl-10 focus:outline-none sm:pl-16">
+                <el-dialog-panel
+                  class="group/dialog-panel relative ml-auto block size-full max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700">
+                  <!-- Close button, show/hide based on slide-over state. -->
+                  <div
+                    class="absolute top-0 left-0 -ml-8 flex pt-4 pr-2 duration-500 ease-in-out group-data-closed/dialog-panel:opacity-0 sm:-ml-10 sm:pr-4">
+                    <button type="button" command="close" commandfor="drawer"
+                      class="relative rounded-md text-gray-400 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                      <span class="absolute -inset-2.5"></span>
+                      <span class="sr-only">Close panel</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div
+                    class="relative flex h-full flex-col overflow-y-auto bg-white py-6 shadow-xl after:absolute after:inset-y-0 after:left-0 after:w-px after:bg-white/10">
+                    <div class="px-4 sm:px-6">
+                      <h2 id="drawer-title" class="text-base font-semibold text-black">تسجيل الدخول</h2>
+
+                    </div>
+                    <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                      <!-- المحتوى -->
+                      <div class="mt-2 flex items-start flex-col gap-4 ">
+                        <div class="user-name-or-email flex flex-col">
+                          <h3 class="mb-2 text-[#55555]">اسم المستخدم او البريد الالكتروني:</h3>
+                          <input type="text" class="rounded-full text-[#55555] bg-[#f1f1f1] p-2 px-5 w-[400px]">
+                        </div>
+
+                        <div class="password flex flex-col">
+                          <h3 class="mb-2 text-[#55555]">كلمة المرور:</h3>
+                          <input type="password" class="rounded-full text-[#55555] bg-[#f1f1f1] p-2 px-5 w-[400px]">
+                          <button
+                            class="bg-[#6D4FE3] text-white font-bold px-6 py-2 rounded-full hover:bg-[#e14a5c]/80 transition-colors mt-4 w-[400px]">تسجيل
+                            الدخول</button>
+                        </div>
+                      </div>
+                      <div class="remember-me-forget-password flex gap-2 justify-between items-center mt-5">
+                        <div>
+                          <input type="checkbox" class="w-4 h-4">
+                          <span class="text-[#55555]">تذكرني</span>
+                        </div>
+                        <div>
+                          <span class="pl-2 text-red-600 ">نسيت كلمة المرور</span>
+                        </div>
+
+                      </div>
+
+                      <div class="register-now flex flex-col items-center mt-5">
+                        <span class="text-[#55555]">ليس لديك حساب؟</span>
+                        <button
+                          class="bg-[#6D4FE3] text-white font-bold px-6 py-2 rounded-full hover:bg-[#e14a5c]/80 transition-colors mt-4 w-[400px]">انشاء
+                          حساب</button>
+                      </div>
+                    </div>
+                  </div>
+                </el-dialog-panel>
+              </div>
+            </dialog>
+          </el-dialog>
+        </div>
+
+      </div>
+      <!-- end login and fav  -->
+    </div>
+
+
+
+
+
+
+
+  </nav>
+
+
+
+
+  <!-- end header and nav-->
+
+
+
+
+  <!-- start hero section -->
+
+  <section class="container mx-auto p-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+
+      <div class="">
+        <div id="default-carousel " class="relative w-full" data-carousel="slide" data-carousel-interval="5000">
+
+        <div class="relative h-[600px] overflow-hidden rounded-lg">
+
+          <div class=" duration-1000 ease-in-out" data-carousel-item>
+            <img src=" dist/assets/images/سلايدر1.jpg " class="absolute block w-full h-full object-cover"
+              alt="صورة المنتج 1">
+          </div>
+
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="dist/assets/images/سلايد2.jpg" class="absolute block w-full h-full object-cover"
+              alt="صورة المنتج 2">
+          </div>
+
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="dist/assets/images/سلايد3.jpg" class="absolute block w-full h-full object-cover"
+              alt="صورة المنتج 3">
+          </div>
+
+        </div>
+
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+        </div>
+
+        <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">التالي</span>
+          </span>
+        </button>
+
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">السابق</span>
+          </span>
+        </button>
+      </div>
+
+      </div>
+
+      <div class="md:col-span-2 flex flex-col gap-4">
+
+        <div class="flex flex-col md:flex-row gap-4">
+
+          <div class="flex-1 relative mobile-1 ">
+
+            <img
+              class=" w-full h-[480px] object-cover rounded-2xl hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+              src="dist/assets/images/غسالةةة.jpg" alt="">
+
+            <div class="absolute inset-0 flex flex-col items-center justify-start text-white p-4 rounded-2xl"
+              style="background-color: rgba(0, 0, 0, 0.7);">
+              <h3 class="text-2xl font-bold mb-3 text-white">أهلاً بكم في متجر كونسول</h3>
+              <p class="text-xxl text-center max-w-lg font-bold border-b pb-3">حيث يوجد جميع احتياجاتك وبتخفيضات تصل لـ
+                70%</p>
+            </div>
+
+          </div>
+
+          <div class="flex-1 p-4">
+            <h2 class="text-2xl font-bold mb-5">الفئات الاكثر طلباً:🔥</h2>
+
+
+            <!-- 1 -->
+
+
+
+            <div class="grid grid-cols-4 gap-4 mb-4">
+
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full cursor-pointer">
+                  <img
+                    class="object-cover w-[75px] h-[75px] text-center hover:scale-[1.05] transition-all duration-300 ease-in"
+                    src="dist/assets/images/games.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">الألعاب</p>
+              </div>
+
+
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[90px] h-[90px]  text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/براد1.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">الثلاجات</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[85px] h-[85px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/براد2.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">ادوات المنزل</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[75px] h-[75px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/iPhone-16-Pro-Max-Latest-Apple-Smartphone-jpg-removebg-preview.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">الهواتف</p>
+              </div>
+            </div>
+            <!-- 2 -->
+
+            <div class="grid grid-cols-4 gap-4">
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[80px] h-[80px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/لاب3.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">اللابتوتات</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[60px] h-[60px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/iron.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">مكواة</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[75px] h-[75px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/كونسول.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">بلايستيشن 5</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[80px] h-[80px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/tv.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">شاشات</p>
+              </div>
+            </div>
+
+
+            <!-- 3  -->
+
+            <div class="grid grid-cols-4 gap-4 mt-3">
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[90px] h-[90px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/ايفون 1.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">ايفون 17</p>
+              </div>
+
+
+
+
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[80px] h-[80px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/ماك 1.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">
+
+                  ماك بوك</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[75px] h-[75px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/ps4-product-thumbnail-01-en-14sep21.webp" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">بلايستيشن 4</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-[#ccc] w-24 h-24 mx-auto flex justify-center items-center rounded-full">
+                  <img
+                    class="object-cover w-[90px] h-[90px] text-center hover:scale-[1.05] transition-all duration-300 ease-in cursor-pointer"
+                    src="dist/assets/images/air22.png" alt="">
+                </div>
+                <p class="text-center text-xxl mt-1 font-bold text-[#333333]">ايربوت 22</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 more rounded-md">
+          <div class="top-more flex justify-between">
+            <h3 class="font-semibold text-gray-900 uppercase dark:text-black text-xl">أفضل العروض الاسبوعية:</h3>
+            <a href="">
+              <p class="border-b border-red-500 w-[fit-content]">تصفح المزيد</p>
+            </a>
+          </div>
+
+          <div class="bottom-more grid grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
+
+            <div class="item1 flex items-center p-2 bg-gray-50 rounded-md">
+              <div class="image">
+                <img class="object-cover w-20 h-20" src="dist/assets/images/كونسول.png" alt="">
+              </div>
+              <div class="items-inof mr-3 relative">
+                <p
+                  class="hidden md:block absolute top-[-18px] left-[-38px] text-xs bg-red-500 text-white py-1 px-2 rounded-md">
+                  عرض</p>
+                <h3 class="text-sm font-semibold ">بلايستيشن 5</h3>
+                <div class="stars text-xs mt-2">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                </div>
+                <span class="price text-red-500 text-sm font-bold">800$</span>
+              </div>
+            </div>
+            <div class="item2 flex items-center p-2 bg-gray-50 rounded-md">
+              <div class="image">
+                <img class="object-cover w-20 h-20" src="dist/assets/images/vr.png" alt="">
+              </div>
+              <div class="items-info mr-3 relative">
+                <p
+                  class="hidden md:block absolute top-[-18px] left-[-38px] text-xs bg-red-500 text-white py-1 px-2 rounded-md">
+                  عرض</p>
+
+                <h3 class="text-sm font-semibold">نظارة vr</h3>
+                <div class="stars text-xs mt-2">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                </div>
+                <span class="price text-red-500 text-sm font-bold">800$</span>
+              </div>
+            </div>
+            <div class="item3 flex items-center p-2 bg-gray-50 rounded-md">
+              <div class="image">
+                <img class="object-cover w-20 h-20"
+                  src="dist/assets/images/404720-smartwatches-fossil-gen-6-44mm-10023431.png" alt="">
+              </div>
+              <div class="items-info mr-3 relative">
+                    <p
+                  class="hidden md:block absolute top-[-18px] left-[-38px] text-xs bg-red-500 text-white py-1 px-2 rounded-md">
+                  عرض</p>
+                <h3 class="text-sm font-semibold">سمارت واتش</h3>
+                <div class="stars text-xs mt-2">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                </div>
+                <span class="price text-red-500 text-sm font-bold">800$</span>
+              </div>
+            </div>
+            <div class="item4 flex items-center p-2 bg-gray-50 rounded-md">
+              <div class="image">
+                <img class="object-cover w-20 h-20" src="dist/assets/images/mac.png" alt="">
+              </div>
+              <div class="items-info mr-3 relative">
+                    <p
+                  class="hidden md:block absolute top-[-18px] left-[-38px] text-xs bg-red-500 text-white py-1 px-2 rounded-md">
+                  عرض</p>
+                <h3 class="text-sm font-semibold">ماك بوك</h3>
+                <div class="stars text-xs mt-2">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                </div>
+                <span class="price text-red-500 text-sm font-bold">800$</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end hero section -->
+
+
+
+
+  <section class="our-services bg-[#0d0625] text-white p-6 rounded-md md:rounded-full mx-auto w-[98%] mt-6">
+
+
+
+    <div
+      class="items flex flex-wrap flex-col md:flex-row items-start md:items-center justify-between mx-auto mx-w-[1200px] px-6">
+      <div class="item1 flex items-center gap-3 px-2 mt-2 md:mt-0">
+
+
+        <div class="icon">
+
+          <i class="fa-solid fa-truck-fast text-[#6D4FE3] text-2xl"></i>
+
+        </div>
+        <div class="item-info">
+          <h3 class="text-xxl font-semibold ">الشحن السريع والمجاني</h3> <span class="text-sm text-[#CFCDD3]">للطلبات
+            فوق 50$</span>
+        </div>
+
+
+
+      </div>
+      <div class="item2 gap-3 flex items-center px-2 mt-2 md:mt-0">
+        <div class="icon">
+          <i class="fa-solid fa-box-open text-2xl text-[#6D4FE3]"></i>
+
+        </div>
+        <div class="item-info">
+          <h3 class="text-xxl font-semibold ">التوصيل في اليوم التالي</h3> <span class="text-sm text-[#CFCDD3]">للطلبات
+            فوق 99$</span>
+        </div>
+
+      </div>
+
+
+
+      <div class="item3 gap-3 flex items-center px-2 mt-2 md:mt-0">
+        <div class="icon"> <i class="fas fa-rotate-left text-[#6D4FE3] text-2xl"></i> </div>
+        <div class="item-info">
+          <h3 class="text-xxl font-semibold">إرجاع مجاني خلال 60 يوم</h3> <span class="text-sm text-[#CFCDD3]">لكل طرق
+            الشحن</span>
+        </div>
+      </div>
+
+
+      <div class="item4 gap-3 flex items-center px-2 mt-2 md:mt-0">
+        <div class="icon"> <i class="fas fa-headset text-[#6D4FE3] text-2xl"></i> </div>
+        <div class="item-info">
+          <h3 class="text-xxl font-semibold"> خدمة عملاء محترفة</h3> <span class="text-sm text-[#CFCDD3]">اختار الدردشة
+            أو الاتصال</span>
+        </div>
+      </div>
+
+
+      <div class="item5 gap-3 flex items-center px-2 mt-2 md:mt-0">
+        <div class="icon"> <i class="fas fa-gem text-[#6D4FE3] text-2xl"></i> </div>
+        <div class="item-info">
+          <h3 class="text-xxl font-semibold">ماركات حصرية</h3> <span class="text-sm text-[#CFCDD3]">منتجات أكثر
+            حصرية</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- start our services -->
+
+
+
+  <!-- start Featured products -->
+
+
+
+  <section class="featured-products  mt-6 bg-[#ccc] p-6 ">
+
+    <div class="flex flex-col lg:flex-row gap-8 px-6">
+
+      <!-- side sec start  -->
+      <div class="side w-full lg:w-1/5 flex flex-col  gap-4 ">
+
+
+        <!-- 1 section -->
+        <div class="img-side w-full rounded-3xl overflow-hidden ">
+          <img class="w-full h-full object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/head ads.jpg" alt="">
+        </div>
+
+
+
+
+
+        <div class="bg-white p-4 rounded-3xl mt-4">
+          <h3 class="font-semibold text-gray-900 uppercase dark:text-black text-xl mb-4">احدث المقالات:</h3>
+
+
+          <div class="last-articles flex flex-col p-2 gap-4 py-2">
+
+            <div class=" article-1 flex items-center gap-2  border-b border-gray-200">
+              <div class="article-img my-2">
+                <img class="w-[90px] h-[70px] object-cover rounded-md" src="dist/assets/images/مقال لابتوب.jfif" alt="">
+              </div>
+              <div class="article-info">
+                <h3 class="text-sm font-semibold text-black">افضل انواع اللابتوتات للالعاب</h3>
+                <p class="text-sm text-[#b4b4b4]">9/30/2025</p>
+              </div>
+
+            </div>
+            <div class=" article-2 flex items-center gap-2  border-b border-gray-200">
+              <div class="article-img my-2">
+                <img class="w-[90px] h-[70px] object-cover rounded-md" src="dist/assets/images/مقال هبريون.jfif" alt="">
+              </div>
+              <div class="article-info">
+                <h3 class="text-sm font-semibold text-black">كيفية اختيار جهاز ستيريو HI-FI
+                </h3>
+                <p class="text-sm text-[#b4b4b4]">10/5/2025</p>
+              </div>
+
+            </div>
+            <div class=" article-3 flex items-center gap-2  ">
+              <div class="article-img">
+                <img class="w-[85px] h-[70px] object-cover rounded-md" src="dist/assets/images/مقال كيبورد.jfif" alt="">
+              </div>
+              <div class="article-info">
+                <h3 class="text-sm font-semibold text-black">لوحة مفاتيح Logitech POP
+                </h3>
+                <p class="text-sm text-[#b4b4b4]">10/6/2025</p>
+              </div>
+
+            </div>
+            <div class=" article-3 flex items-center gap-2 border-t border-gray-200">
+              <div class="article-img mt-2">
+                <img class="w-[85px] h-[75px] object-cover rounded-md" src="dist/assets/images/اختيار موبايل.jfif"
+                  alt="">
+              </div>
+              <div class="article-info ">
+                <h3 class="text-sm font-semibold text-black">اختيار موبايل
+                </h3>
+                <p class="text-sm text-[#b4b4b4]">10/6/2025</p>
+              </div>
+
+            </div>
+            <div class=" article-3 flex items-center gap-2  border-t border-gray-200">
+              <div class="article-img mt-2">
+                <img class="w-[85px] h-[75px] object-cover rounded-md" src="dist/assets/images/اختيار بلايس.jfif"
+                  alt="">
+              </div>
+              <div class="article-info ">
+                <h3 class="text-sm font-semibold text-black">اختيار سوني
+                </h3>
+                <p class="text-sm text-[#b4b4b4]">10/6/2025</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <!-- 3rd sec  -->
+        <div class="bg-white p-4 rounded-3xl mt-4">
+          <h3 class="font-semibold text-gray-900 uppercase dark:text-black text-xl mb-3">أحدث المنتجات:</h3>
+
+
+          <div class="last-articles flex flex-col gap-4 py-2 p-2">
+
+            <div class="article-1 flex items-center gap-2 border-b border-gray-200">
+
+              <div class="article-img">
+                <img class=" w-[80px] h-[70px] object-cover rounded-md" src="dist/assets/images/كامب قط.png" alt="">
+              </div>
+
+              <div class="article-info">
+                <h3 class="text-sm font-semibold text-black">كامب للقطة</h3>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="text-red-500 text-sm font-bold">90$</span>
+                  <span class="text-gray-400 line-through text-sm">150$</span>
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="article-2 flex items-center gap-2 border-b border-gray-200">
+
+              <div class="article-img">
+                <img class="w-[80px] h-[70px] object-cover rounded-md" src="dist/assets/images/فوريست لبس.png" alt="">
+              </div>
+
+              <div class="article-info">
+                <h3 class="text-sm font-semibold text-black">كنزات اطفال</h3>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="text-red-500 text-sm font-bold">40$</span>
+                  <span class="text-gray-400 line-through text-sm">50$</span>
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="article-3 flex items-center gap-2 border-b border-gray-200">
+
+              <div class="article-img mb-2">
+                <img class="w-[80px] h-[70px]  object-cover rounded-md" src="dist/assets/images/ولاد دريس.png" alt="">
+              </div>
+
+              <div class="article-info ">
+                <h3 class="text-sm font-semibold text-black">لبس اطفال</h3>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="text-red-500 text-sm font-bold">30$</span>
+                  <span class="text-gray-400 line-through text-sm">35$</span>
+
+                </div>
+              </div>
+
+
+            </div>
+            <div class="article-4 flex items-center gap-2 border-gray-200">
+
+              <div class="article-img">
+                <img class="w-[80px] h-[70px]  object-cover rounded-md" src="dist/assets/images/ايفون 16.png" alt="">
+              </div>
+
+              <div class="article-info">
+                <h3 class="text-sm font-semibold text-black">الموبايلات</h3>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="text-red-500 text-sm font-bold">1000$</span>
+                  <span class="text-gray-400 line-through text-sm">1200$</span>
+
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="article-5 flex items-center gap-2 border-t border-gray-200">
+
+              <div class="article-img">
+                <img class="w-[80px] h-[70px]  object-cover rounded-md" src="dist/assets/images/لاب3.png" alt="">
+              </div>
+
+              <div class="article-info">
+                <h3 class="text-sm font-semibold text-black">اللابتوبات</h3>
+                <div class="flex items-center gap-2 mt-2">
+                  <span class="text-red-500 text-sm font-bold">700$</span>
+                  <span class="text-gray-400 line-through text-sm">900$</span>
+
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <button class="bg-[#6D4FE3] text-white p-2 mb-4 rounded-md w-full ">
+          المزيد
+        </button>
+
+      </div>
+
+      <!-- side sec end  -->
+
+
+
+
+
+      <!-- start main content  -->
+      <div class="boxes  flex flex-col  md:grid grid-cols-5 gap-4 flex-1">
+
+
+
+        <!-- 1 box  -->
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group ">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href="#default-modal" data-modal-target="default-modal" data-modal-toggle="default-modal"
+              class="transition duration-500"> <i title="اضافة للمقارنة" class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i title="اضافة للمفضلة" class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i title="نظرة سريعة" class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/كونسول.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/بلاي2.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">بلايستيشن 5</h3>
+              <span class="text-[#555555] text-sm">بلايستيشن كونسول</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">800$</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 box  -->
+
+
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group ">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/سماعة2.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/سماعة1.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold "> Sony WH-100XM5</h3>
+              <span class="text-[#555555] text-sm">سماعات رأس</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">400$</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 box  -->
+
+
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group ">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/ايفون 1.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/ايفون2.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">ايفون 17 برو ماكس</h3>
+              <span class="text-[#555555] text-sm">هاتف</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">1200$</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 4 box  -->
+
+
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group ">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/ساعة1.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/ساعة2.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center">
+            <div>
+              <h3 class="text-lg font-semibold ">ووتش ابل سيرياس 8</h3>
+              <span class="text-[#555555] text-sm">ساعات ابل</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">399$</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 box  -->
+
+
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group hidden md:block">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3] w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/asus-rt-ax52-ax1800-dual-band-wifi6-ai-mesh-sistem-router-22219881-sw1000sh1000-removebg-preview.png"
+              alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/بلاي2.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">راوتر ايسوس</h3>
+              <span class="text-[#555555] text-sm">راوترات</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">30$</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 box  -->
+
+
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group hidden md:block">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/ماك 1.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/ماك_2-removebg-preview.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">ماك بوك</h3>
+              <span class="text-[#555555] text-sm">ابل</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">1900$</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 box  -->
+
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group hidden md:block">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover " src="dist/assets/images/m1.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">ماك ميني M1</h3>
+              <span class="text-[#555555] text-sm">ماك بوك</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">700$</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 box  -->
+
+
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group hidden md:block">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/ايباد1.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/ايباد2.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">ايباد ابل</h3>
+              <span class="text-[#555555] text-sm">ايبادات</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">500$</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 box  -->
+        <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group hidden md:block">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/لاب3.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/لاب4.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">لابتوب اتش بي</h3>
+              <span class="text-[#555555] text-sm">لاب توبات
+              </span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">916$</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 10 box  -->
+
+        <div class="relative box flex items-center flex-col bg-white rounded-md group hidden md:block">
+          <div
+            class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+            <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+            <a href=""> <i class="fa-regular fa-heart"></i></a>
+            <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+
+          <div class="relative box-image w-full h-full md:w-52 md:h-52 cursor-pointer border-b border-gray-200">
+
+            <div
+              class="absolute bottom-0 bg-[#6D4FE3] w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+              شراء الان</div>
+
+            <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+              src="dist/assets/images/لاب1.png" alt="">
+
+            <img
+              class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+              src="dist/assets/images/لاب2.png" alt="">
+          </div>
+
+
+          <div class="box-description text-center p-2">
+            <div>
+              <h3 class="text-lg font-semibold ">لابتوب ايسوس</h3>
+              <span class="text-[#555555] text-sm">لابتوبتات</span>
+            </div>
+
+            <div class="stars mt-1">
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+              <i class="fa-solid fa-star text-yellow-500"></i>
+            </div>
+
+
+            <div class="price">
+              <span class="text-red-500 text-xl font-bold">1600$</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- game ad  -->
+
+        <div class="games-slider bg-[#6D4FE3] col-span-5 flex flex-col lg:flex-row rounded-md mt-6 w-full p-4 ">
+
+
+          <div class="p-4 rounded-md flex flex-col lg:flex-row w-full items-center gap-10 justify-between">
+
+
+            <div class="relative ad-discount-btn w-full lg:w-1/4  flex items-center gap-4 flex-col">
+              <div
+                class="absolute flex items-center top-20 left-0  text-center bg-red-500 text-white p-2 font-bold h-15 w-15 rounded-[50%]">
+                خصم 50% </div>
+              <div class="top-games">
+                <div class="games-innfo">
+                  <h3 class="text-white text-3xl font-bold ">احصل على تخفيض في سوني 5</h3>
+                  <button class="mt-5 btn text-black bg-white rounded-full p-3 px-4 text-sm hover:bg-white/80">شراء
+                    الان</button>
+                </div>
+              </div>
+              <div class="ad-image">
+                <img class="object-cover w-full h-full" src="dist/assets/images/games.png" alt="">
+              </div>
+            </div>
+
+
+
+            <div class="swiper relative mySwiper flex-1 w-full max-w-full mx-auto">
+              <div class="boxes swiper-wrapper flex-1 ">
+
+
+                <!-- 1 box  -->
+                <div class="relative swiper-slide box flex items-center flex-col bg-white rounded-md group">
+                  <div
+                    class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+                    <a href=""> <i title="اضافة للمقارنة" class="fa-solid fa-shuffle"></i></a>
+                    <a href=""> <i title="اضافة للمفضلة" class="fa-regular fa-heart"></i></a>
+                    <a href="">
+                      <i title="نظرة سريعة" class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+
+                  <div class="relative box-image w-full max-w-[208px] h-auto cursor-pointer border-b border-gray-200">
+
+
+                    <img class="w-full h-full object-cover" src="dist/assets/images/uncharted (1).png" alt="">
+
+                  </div>
+
+
+                  <div class="box-description text-center p-2">
+                    <div>
+                      <h3 class="text-lg font-semibold ">انشتارتد 4</h3>
+                      <span>العاب</span>
+                    </div>
+
+                    <div class="stars mt-1">
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                    </div>
+
+
+                    <div class="price">
+                      <span class="text-red-500 text-xl font-bold">49$</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2 box  -->
+
+
+                <div class="relative  swiper-slide box flex items-center flex-col bg-white rounded-md group">
+                  <div
+                    class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+                    <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+                    <a href=""> <i class="fa-regular fa-heart"></i></a>
+                    <a href="">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+
+                  <div class="relative box-image w-full max-w-[208px] h-auto cursor-pointer border-b border-gray-200">
+
+
+
+                    <img class="w-full h-full object-cover" src="dist/assets/images/reed .png" alt="">
+
+                  </div>
+
+
+                  <div class="box-description text-center p-2">
+                    <div>
+                      <h3 class="text-lg font-semibold "> ريد ديد</h3>
+                      <span>العاب</span>
+                    </div>
+
+                    <div class="stars mt-1">
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                    </div>
+
+
+                    <div class="price">
+                      <span class="text-red-500 text-xl font-bold">60$</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 box  -->
+
+
+                <div class="relative  swiper-slide box flex items-center flex-col  bg-white rounded-md group">
+                  <div
+                    class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+                    <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+                    <a href=""> <i class="fa-regular fa-heart"></i></a>
+                    <a href="">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+
+
+                  <div class="relative box-image w-full max-w-[208px] h-auto cursor-pointer border-b border-gray-200">
+
+
+                    <img class="w-full h-full object-cover" src="dist/assets/images/fc.png" alt="">
+
+                  </div>
+
+
+                  <div class="box-description text-center p-2">
+                    <div>
+                      <h3 class="text-lg font-semibold ">فيفا 26</h3>
+                      <span>العاب</span>
+                    </div>
+
+                    <div class="stars mt-1">
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                    </div>
+
+
+                    <div class="price">
+                      <span class="text-red-500 text-xl font-bold">300$</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- 4 box  -->
+
+
+                <div class="relative  swiper-slide box flex items-center flex-col  bg-white rounded-md group">
+                  <div
+                    class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+                    <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+                    <a href=""> <i class="fa-regular fa-heart"></i></a>
+                    <a href="">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+
+
+                  <div class="relative box-image w-full max-w-[208px] h-auto cursor-pointer border-b border-gray-200">
+
+
+
+                    <img class="w-full h-full object-cover" src="dist/assets/images/last of .png" alt="">
+
+                  </div>
+
+
+                  <div class="box-description text-center p-2">
+                    <div>
+                      <h3 class="text-lg font-semibold ">ذا لاست اوف اس</h3>
+                      <span>العاب</span>
+                    </div>
+
+                    <div class="stars mt-1">
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                    </div>
+
+
+                    <div class="price">
+                      <span class="text-red-500 text-xl font-bold">400$</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5 box  -->
+
+
+                <div class="relative  swiper-slide box flex items-center flex-col  bg-white rounded-md group">
+                  <div
+                    class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+                    <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+                    <a href=""> <i class="fa-regular fa-heart"></i></a>
+                    <a href="">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+
+
+                  <div class="relative box-image w-full max-w-[208px] h-auto cursor-pointer border-b border-gray-200">
+
+
+                    <img class="w-full h-full object-cover"
+                      src="dist/assets/images/grand-theft-auto-v-game-icon-gta-5-1-grand-theft-auto-v-png-clipart-removebg-preview.png"
+                      alt="">
+
+                  </div>
+
+                  <div class="box-description text-center p-2">
+                    <div>
+                      <h3 class="text-lg font-semibold ">غراند 5</h3>
+                      <span>العاب</span>
+                    </div>
+
+                    <div class="stars mt-1">
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                      <i class="fa-solid fa-star text-yellow-500"></i>
+                    </div>
+
+
+                    <div class="price">
+                      <span class="text-red-500 text-xl font-bold">50$</span>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="btn-controls flex items-center justify-between">
+                <div
+                  class="absolute top-[40%] z-10 btn-next p-2 rounded-full text-black flex justify-center items-center w-10 h-10">
+                  <i class="fa-solid fa-chevron-right text-black"></i>
+                </div>
+                <div
+                  class=" absolute left-0 top-[40%] z-10 btn-prev p-2 rounded-full text-black flex items-center justify-center w-10 h-10">
+                  <i class="fa-solid fa-chevron-left text-black"></i>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-span-5 rounded-md  w-full hidden md:block">  
+          <div class="flex items-center gap-4">
+
+            <div class="flex-1">
+              <div id="default-carousel" class="relative w-full" data-carousel="slide">
+
+                <div class="relative h-[540px] overflow-hidden rounded-3xl">
+                  <div class="duration-1000 ease-in-out" data-carousel-item>
+                    <img src="dist/assets/images/lap ad.jpg" class="absolute block w-full h-full object-cover"
+                      alt="صورة المنتج 1">
+                  </div>
+                  <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="dist/assets/images/air5 .jpg" class="absolute block w-full h-full object-cover"
+                      alt="صورة المنتج 2">
+                  </div>
+                  <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="dist/assets/images/basic_img_16950193639425.jpg"
+                      class="absolute block w-full h-full object-cover" alt="صورة المنتج 3">
+                  </div>
+                </div>
+
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                </div>
+
+                <button type="button"
+                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-next>
+                </button>
+
+                <button type="button"
+                  class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-prev>
+                </button>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="bg-white rounded-3xl">
+
+
+              <div class="title p-4 flex items-center justify-between border-b border-gray-200 w-full">
+                <h3 class="text-xl font-semibold "> افضل 100 منتج</h3>
+                <a href="">
+                  <p class="text-black border-b border-red-500 text-sm">تصفح المزيد</p>
+                </a>
+              </div>
+              <!-- itemss 1  -->
+
+
+              <div class="flex flex-col lg:flex-row gap-4 p-4">
+                <div class="items 1">
+
+                  <div class="items1 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image pr-4">
+                      <img class="w-16 h-16 object-cover" src="dist/assets/images/كونديشن.png" alt="">
+
+                    </div>
+                    <div class="description pl-4">
+                      <h3 class="text-xxl font-semibold ">مكيف</h3>
+                      <span class="text-red-500 text-sm font-bold">1100$ </span>
+
+                    </div>
+
+
+                  </div>
+                  <div class="items2 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image">
+                      <img class="w-16 h-16 object-cover" src="dist/assets/images/خلاط.png" alt="">
+
+                    </div>
+                    <div class="description">
+                      <h3 class="text-xxl font-semibold ">خلاط</h3>
+                      <span class="text-red-500 text-sm font-bold">260$ </span>
+
+                    </div>
+
+
+                  </div>
+                  <div class="items3 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image">
+                      <img class="w-16 h-16 object-cover" src="dist/assets/images/جلاية.png" alt="">
+
+                    </div>
+                    <div class="description">
+                      <h3 class="text-xxl font-semibold ">جلايةK</h3>
+                      <span class="text-red-500 text-sm font-bold">500$ </span>
+
+                    </div>
+
+
+                  </div>
+                  <div class="items4 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image">
+                      <img class="w-14 h-14 object-cover" src="dist/assets/images/iron.png" alt="">
+
+                    </div>
+                    <div class="description">
+                      <h3 class="text-xxl font-semibold ">مكواة 1</h3>
+                      <span class="text-red-500 text-sm font-bold">100$ </span>
+
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+
+                <!-- itemss 2  -->
+
+                <div class="items 2">
+
+                  <div class="items1 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image">
+                      <img class="w-16 h-16 object-cover" src="dist/assets/images/مكنسة كهربا.png" alt="">
+
+                    </div>
+                    <div class="description">
+                      <h3 class="text-xxl font-semibold ">مكنسة كهرباء</h3>
+                      <span class="text-red-500 text-sm font-bold">110$ </span>
+
+                    </div>
+
+
+                  </div>
+                  <div class="items2 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image">
+                      <img class="w-16 h-16 object-cover" src="dist/assets/images/ميسر.png" alt="">
+
+                    </div>
+                    <div class="description">
+                      <h3 class="text-xxl font-semibold ">ميكسر</h3>
+                      <span class="text-red-500 text-sm font-bold">220$ </span>
+
+                    </div>
+
+
+                  </div>
+                  <div class="items3 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image">
+                      <img class="w-16 h-16 object-cover" src="dist/assets/images/مايكرويف.png" alt="">
+
+                    </div>
+                    <div class="description">
+                      <h3 class="text-xxl font-semibold ">مايكرويف</h3>
+                      <span class="text-red-500 text-sm font-bold">550$ </span>
+
+                    </div>
+
+
+                  </div>
+                  <div class="items4 flex items-center gap-4  p-4 rounded-md mb-4">
+                    <div class="image">
+                      <img class="w-16 h-16 object-cover" src="dist/assets/images/مكواي 2.png" alt="">
+
+                    </div>
+                    <div class="description">
+                      <h3 class="text-xxl font-semibold ">مكواة 2</h3>
+                      <span class="text-red-500 text-sm font-bold">900$ </span>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end Featured products -->
+
+
+
+
+  <section class="shop-by-categoris mt-10 p-6 mx-auto">
+    <h3 class="text-2xl font-semibold text-start p-2">تسوّق حسب الفئة:</h3>
+
+    <div
+      class="categories grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:flex xl:flex-row gap-4 gap-6 mt-6">
+
+
+
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/براد1.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">الأجهزة المنزلية</h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/كرسي_شيرز-removebg-preview.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">كراسي </h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/كريم وش.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">كريمات </h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/يد كونسول.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]"> العاب </h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/بمبر كنزة.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">البسة </h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/لاب3.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">الكتونيات </h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/غسالة 50 .png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">أجهزة منزل </h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/بي سي.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">الكترونيات</h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/ايفون_13-removebg-preview.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]"> تلفونات </h3>
+
+        </div>
+
+
+      </div>
+      <div class="item1 flex flex-col items-center gap-4  p-4 rounded-md mb-4">
+        <div class="image bg-white p-4 rounded-full ">
+          <img class="w-16 h-16 object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/كريم ستايل.png" alt="">
+
+        </div>
+        <div class="description">
+          <h3 class="text-xxl font-semibold text-[#333333]">كريمات</h3>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- start shop by ads section  -->
+
+
+  <section class="shop-by-ads mt-10 p-6 mx-auto">
+    <h3 class="text-2xl font-semibold text-start p-2">تسوّق حسب الاعلانات:</h3>
+    <div class="categories flex flex-col md:flex-row gap-4 items-center justify-between mt-6">
+
+      <!-- cart1 -->
+      <div class="cart1 cursor-pointer flex flex-col rounded-lg relative overflow-hidden flex-1">
+        <div class="relative h-[395px]"> <img
+            class="w-full h-full object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/section ad.png" alt="ابل اير 5"> </div>
+        <div class="z-10 cart-details bg-black text-white p-4">
+          <h3 class="text-2xl font-bold mb-2 text-center">ساعة ابل 5</h3>
+          <p class="text-xlm mb-2 text-center text-[#eee]">ابتداء من 999$</p>
+        </div>
+        <div
+          class="bottom-0 bg-[#6D4FE3] hover:bg-[#5a40b9] transition duration-200 w-full text-white py-4 text-center font-semibold">
+          تسوّق الان </div>
+      </div> <!-- end cart1 -->
+
+
+
+      <!-- cart2 -->
+      <div class="cart2 flex-1 cursor-pointer flex flex-col rounded-lg relative overflow-hidden">
+        <div class="relative h-[395px] bg-black"> <img
+            class="w-full h-full object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/كنباي.png" alt="ابل اير 5"> </div>
+        <div class="z-10 cart-details bg-black text-white p-4">
+          <h3 class="text-2xl font-bold mb-2 text-center">كنباية</h3>
+          <p class="text-xlm mb-2 text-center text-[#eee]">ابتداء من 600$</p>
+        </div>
+        <div
+          class="bottom-0 bg-[#6D4FE3] hover:bg-[#5a40b9] transition duration-200 w-full text-white py-4 text-center font-semibold">
+          تسوّق الان </div>
+      </div> <!-- end cart2 -->
+
+
+      <!-- cart3 -->
+      <div class="cart3 flex-1 cursor-pointer flex flex-col rounded-lg relative overflow-hidden bg-black">
+        <div class="relative "> <img
+            class=" w-full h-full object-cover hover:scale-[1.05] transition-all duration-500 cursor-pointer"
+            src="dist/assets/images/سيشوار-removebg-preview.png" alt="ابل اير 5"> </div>
+        <div class="z-10 cart-details bg-black text-white p-4">
+          <h3 class="text-2xl font-bold mb-2 text-center">سيشوار </h3>
+          <p class="text-xlm mb-2 text-center text-[#eee]">ابتداء من 100$</p>
+        </div>
+        <div
+          class="bottom-0 bg-[#6D4FE3] hover:bg-[#5a40b9] transition duration-200 w-full text-white py-4 text-center font-semibold rounded-b-lg">
+          تسوّق الان </div>
+      </div>
+  </section>
+
+  <!-- start shop by ads section  -->
+
+
+
+
+
+  <!-- start more-recommended section  -->
+  <section class="start-more-recommended-sec mx-auto p-6 mt-10 bg-[#f5f5f5] rounded-md">
+    <h3 class="text-2xl font-semibold text-start p-2 my-3">المزيد من المنتجات الموصى بها:</h3>
+
+    <div class="boxes grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+
+      <!-- 1 box مثال -->
+      <div class="relative box flex flex-col items-center gap-3 bg-white rounded-md group">
+
+        <div
+          class="quick-view absolute top-2 right-2 flex flex-col items-center bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""><i title="اضافة للمقارنة" class="fa-solid fa-shuffle"></i></a>
+          <a href=""><i title="اضافة للمفضلة" class="fa-regular fa-heart"></i></a>
+          <a href=""><i title="نظرة سريعة" class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+        <div
+          class="relative box-image w-full sm:w-40 md:w-44 lg:w-52 h-40 sm:h-44 md:h-52 cursor-pointer border-b border-gray-200">
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg rounded-bl-lg px-2 py-1 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان
+          </div>
+          <img class="w-full h-full object-cover transition duration-500"
+            src="dist/assets/images/لينيفو_تاب-removebg-preview.png" alt="">
+        </div>
+
+        <div class="box-description text-center p-2">
+          <h3 class="text-lg font-semibold">Lenevo</h3>
+          <span class="text-sm text-[#555555]">لابتوبات</span>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">800$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 box  -->
+
+
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 " src="dist/assets/images/ايباد ابل ميني.png"
+            alt="">
+
+
+        </div>
+
+
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Apple Ipad Mini</h3>
+            <span class="text-sm text-[#555555]">ايباد ابل</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">400$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 box  -->
+
+
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 "
+            src="dist/assets/images/hp-zbook-firefly-14-g8-2c9r0ea-removebg-preview.png" alt="">
+
+
+        </div>
+
+
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">HP ZBook Firefly</h3>
+            <span class="text-sm text-[#555555]">لابتوب</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">1200$</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 4 box  -->
+
+
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 " src="dist/assets/images/لاب3.png" alt="">
+
+
+        </div>
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Asus Laptop</h3>
+            <span class="text-sm text-[#555555]">لابتوب</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">399$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 box  -->
+
+
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 " src="dist/assets/images/air22.png" alt="">
+
+
+        </div>
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Air22</h3>
+            <span class="text-sm text-[#555555]">سماعات</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">340$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 box  -->
+
+
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 " src="dist/assets/images/بي سي.png" alt="">
+
+
+        </div>
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Kyoca Ecosys M222</h3>
+            <span class="text-sm text-[#555555]">بي سي</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">1900$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 box  -->
+
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover " src="dist/assets/images/m1.png" alt="">
+        </div>
+
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Mackbook</h3>
+            <span class="text-sm text-[#555555]">ماك بوك</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">700$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 box  -->
+
+
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+            src="dist/assets/images/ايباد1.png" alt="">
+
+          <img
+            class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+            src="dist/assets/images/ايباد2.png" alt="">
+        </div>
+
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Ipad Pro</h3>
+            <span class="text-sm text-[#555555]">ايبادات</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">500$</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- 9 box  -->
+      <div class="relative box flex items-center flex-col gap-3 bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 " src="dist/assets/images/vr.png" alt="">
+
+
+        </div>
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Logiteck ERCO k888</h3>
+            <span class="text-sm text-[#555555]">VR
+            </span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">1116$</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 10 box  -->
+
+      <div class="relative box flex items-center flex-col bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3] w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 group-hover:opacity-0"
+            src="dist/assets/images/لاب1.png" alt="">
+
+          <img
+            class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition duration-500"
+            src="dist/assets/images/لاب2.png" alt="">
+        </div>
+
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Asus VivoBook</h3>
+            <span class="text-sm text-[#555555]">لابتوبتات</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">1600$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 box  -->
+
+      <div class="relative box flex items-center flex-col bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 " src="dist/assets/images/لاب2.png" alt="">
+
+
+        </div>
+
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">Latodo Laptop</h3>
+            <span class="text-sm text-[#555555]">لابتوبتات</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">1600$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 box  -->
+
+      <div class="relative box flex items-center flex-col bg-white rounded-md group">
+        <div
+          class="quick-view z-10 absolute top-2 right-0 flex items-center justify-between flex-col bg-[#eee] px-2 py-4 rounded-2xl shadow shadow-gray-400 h-30 w-[-10px] opacity-0 group-hover:opacity-100 transition duration-500">
+          <a href=""> <i class="fa-solid fa-shuffle"></i></a>
+          <a href=""> <i class="fa-regular fa-heart"></i></a>
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+        <div class="relative box-image w-52 h-52 cursor-pointer border-b border-gray-200">
+
+          <div
+            class="absolute bottom-0 bg-[#6D4FE3]/75 w-full text-white rounded-br-lg z-10 rounded-bl-lg px-2 p-2 text-center opacity-0 group-hover:opacity-100 transition duration-500">
+            شراء الان</div>
+
+          <img class="w-full h-full object-cover transition duration-500 " src="dist/assets/images/بي سيييي2.avif"
+            alt="">
+
+
+        </div>
+
+
+        <div class="box-description text-center p-2">
+          <div>
+            <h3 class="text-lg font-semibold ">HP ENVY 33</h3>
+            <span class="text-sm text-[#555555]">شاشة</span>
+          </div>
+
+          <div class="stars mt-1">
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+            <i class="fa-solid fa-star text-yellow-500"></i>
+          </div>
+
+
+          <div class="price">
+            <span class="text-red-500 text-xl font-bold">1600$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end more-recommended section  -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- start footer sec  -->
+  <footer class="footer border-t-[3px] border-[#e14a5c] py-6 mx-auto ">
+    <div class="container mx-auto my-6 px-6">
+      <div
+        class="top-footer flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-gray-300 pb-6">
+
+
+        <div class="logo flex items-center pr-1">
+          <a href="/" class="flex items-center ">
+            <img class="w-[50px] " src="dist/assets/images/logo22.png" alt="logo">
+          </a>
+
+          <a href="/" class="flex items-center">
+            <span class="text-black font-bold text-2xl pr-2">متجر كونسول</span>
+          </a>
+        </div>
+
+
+        <div class="social flex items-center gap-2 mt-4">
+          <span class="text-xl text-gray-500">تابعنا:</span>
+
+          <a class="bg-blue-600 w-8 h-8 flex items-center justify-center  rounded-full" href=""><i
+              class="fa-brands fa-facebook-f text-white"></i></a>
+          <a class="bg-black w-8 h-8 flex items-center justify-center  rounded-full" href=""><i
+              class="fa-brands fa-x-twitter text-white"></i></a>
+          <a class="bg-[#E1306C]  w-8 h-8 flex items-center justify-center  rounded-full" href=""><i
+              class="fa-brands fa-instagram text-white"></i></a>
+          <a class="bg-[#0077B5] w-8 h-8 flex items-center justify-center  rounded-full" href=""><i
+              class="fa-brands fa-linkedin-in text-white"></i></a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="mid-footer grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+        <div class="about-us ">
+          <h3 class="mb-4 font-bold text-xl text-black">معلومات عننا:</h3>
+          <ul class="flex flex-col gap-2">
+            <li class="mb-2 text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="">من نحن</a></li>
+            <li class="mb-2 text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="">اتصل بنا</a></li>
+            <li class="mb-2 text-gray-500 hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full "><a
+                href="">شركائنا</a></li>
+            <li class="mb-2 text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="">اعمل معنا</a></li>
+            <li class="mb-2 text-gray-500   hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div class="quick-links">
+          <h3 class="mb-4 font-bold text-xl text-black">روابط سريعة:</h3>
+          <ul class="flex flex-col gap-2">
+            <li class="mb-2 text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="#">الصفحة الرئيسية</a></li>
+
+            <li class="mb-2 text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="#">المنزل والحديقة</a></li>
+            <li class="mb-2 text-gray-500 hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full "><a
+                href="/electronics.html">الالكترونيات</a></li>
+            <li class="mb-2 text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="/beautycare.html">الجمال والعناية</a></li>
+            <li class="mb-2 text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="/appliances.html">الأجهزة المنزلية</a></li>
+            <li class="mb-2  text-gray-500  hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="/baby-kids.html">الاطفال والرضع</a></li>
+          </ul>
+        </div>
+        <div class="customer-service">
+          <h3 class="mb-4 font-bold text-xl text-black">خدمات العملاء:</h3>
+          <ul class="flex flex-col gap-2 ">
+            <li class="mb-2 text-gray-500 hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="">سياسة الاسترجاع</a></li>
+            <li class="mb-2 text-gray-500 hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"> <a
+                href="">الشحن والتسليم</a></li>
+            <li class="mb-2 text-gray-500 hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="">الأسئلة الشائعة</a></li>
+            <li class="mb-2 text-gray-500 hover:text-[#e14a5c]/80 transition duration-200 ease-in-out w-full"><a
+                href="">الدعم الفني</a></li>
+            <li class="mb-2 text-gray-500 hover:text-[#e14a5c]:/80 transition duration-200 ease-in-out w-full"><a
+                href="">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="newsletter flex flex-col gap-4">
+          <div class="flex flex-col gap-4">
+            <h3 class=" font-bold text-xl text-black">اشترك في النشرة البريدية:</h3>
+            <p class="text-sm text-gray-500 mb-2">اشترك للحصول على آخر التحديثات والعروض الخاصة.</p>
+            <form class="flex items-center flex-col gap-2 w-full">
+              <input class="p-2 border border-gray-300 rounded-l-md focus:outline-none w-full" type="email"
+                placeholder="ادخل بريدك الالكتروني">
+              <button
+                class="bg-[#e14a5c] text-white p-2 rounded-r-md hover:bg-[#e14a5c]/80 transition duration-200 ease-in-out w-full "
+                type="submit">اشترك</button>
+            </form>
+          </div>
+          <div>
+            <h3 class="mb-3 font-bold text-xxl text-black">طرق الدفع:</h3>
+            <img src="dist/assets/images/payments (1).png" alt="">
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      <div
+        class="bottom-footer flex flex-col md:flex-col justify-between items-center mt-6 border-t border-gray-300 pt-6 text-center">
+        <p class="text-sm text-gray-500">جميع الحقوق محفوظة &copy; 2025</p>
+        <p class="text-sm text-gray-500">تم بناء هذا الموقع بواسطة : ISMAIL HALVI </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer  -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- start modal  -->
+
+
+
+
+
+
+  <!-- Modal toggle -->
+  <!-- <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  
+</button> -->
+
+  <div id="default-modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+    <div class="relative p-4 w-full max-w-2xl max-h-full transition all duration-500">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow-sm">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            بلايستيشن 5
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent  rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
+            data-modal-hide="default-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="flex gap-2 justify-between p-4">
+          <div class="img flex flex-col gap-2 p-4">
+            <img class="w-full h-full object-cover" src="dist/assets/images/كونسول.png" alt="">
+            <button
+              class="mt-2 bg-[#e14a5c] text-white p-2 rounded-md hover:bg-[#e14a5c]/80 transition duration-200 ease-in-out w-full ">كافة
+              التفاصيل</button>
+          </div>
+
+          <div class="info p-4">
+            <h3 class="text-2xl font-semibold text-start p-2 my-3 ">بلايستيشن 5</h3>
+            <p class="mt-2 text-[#555555] text-start text-sm">
+              بلايستيشن 5 هو الجيل الحالي من أجهزة سوني للألعاب، يتميز بمعالج قوي، رسومات عالية الجودة، وتحميل سريع
+              للألعاب بفضل الـ SSD. يدعم تجربة اللعب بدقة 4K وتقنيات الصوت المحيطي، ويوفر مكتبة ضخمة من الألعاب الممتعة
+              لجميع الأعمار.
+
+            </p>
+
+            <div class="stars flex  items-center gap-2 mt-4">
+              <i class="fa-solid fa-star text-yellow-500 text-xxl"></i>
+              <i class="fa-solid fa-star text-yellow-500 text-xxl"></i>
+              <i class="fa-solid fa-star text-yellow-500 text-xxl"></i>
+              <i class="fa-solid fa-star text-yellow-500 text-xxl"></i>
+              <i class="fa-solid fa-star text-yellow-500 text-xxl"></i>
+
+            </div>
+
+            <div class="price flex items-center gap-2 mt-3">
+              <span class="text-xxl text-gray-500">السعر:</span>
+              <span class="text-xxl text-[#e14a5c] font-semibold">1500$</span>
+            </div>
+
+            <hr>
+
+            <div class="share flex items-center gap-2 mt-3">
+              <span class="text-xxl text-gray-500">مشاركة:</span>
+              <a class="bg-blue-600 w-6 h-6 flex items-center justify-center  rounded-full" href=""><i
+                  class="fa-brands fa-facebook-f text-white"></i></a>
+              <a class="bg-black w-6 h-6 flex items-center justify-center  rounded-full" href=""><i
+                  class="fa-brands fa-x-twitter text-white"></i></a>
+              <a class="bg-[#E1306C]  w-6 h-6 flex items-center justify-center  rounded-full" href=""><i
+                  class="fa-brands fa-instagram text-white"></i></a>
+              <a class="bg-[#0077B5] w-6 h-6 flex items-center justify-center  rounded-full" href=""><i
+                  class="fa-brands fa-linkedin-in text-white"></i></a>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- end footer sec  -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <script src="dist/assets/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- زر الطلوع لفوق -->
+  <button id="scrollTopBtn"
+    class="flex items-center justify-center w-12 h-12 text-2xl z-50 cursor-pointer fixed bottom-6 right-6 bg-blue-600 text-white p-3 text-center rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+    ↑
+  </button>
+
+
+
+
+
+
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    // إظهار الزر لما المستخدم ينزل لتحت
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollBtn.classList.remove("hidden");
+      } else {
+        scrollBtn.classList.add("hidden");
+      }
+    });
+
+    // عند الضغط يرجع لأعلى الصفحة بسلاسة
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+
+
+  <a class="whatsapp fixed bottom-6 left-6 z-50 bg-[#25D366] w-12 h-12 flex items-center justify-center rounded-full"
+    href="https://wa.me/+90 543 334 49 79" target="_blank">
+    <i class="fa-brands fa-whatsapp text-white text-4xl"></i>
+  </a>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const menu = document.getElementById('mobile-menu');
+    const panel = document.getElementById('menu-panel');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.remove('hidden');
+      setTimeout(() => {
+        panel.classList.remove('translate-x-full');
+      }, 10); // لتفعيل الحركة بعد ظهور العنصر
+    });
+
+    closeBtn.addEventListener('click', () => {
+      panel.classList.add('translate-x-full');
+      setTimeout(() => {
+        menu.classList.add('hidden');
+      }, 300); // بعد انتهاء الحركة
+    });
+
+    // إغلاق عند الضغط على الخلفية
+    menu.addEventListener('click', (e) => {
+      if (e.target === menu) {
+        panel.classList.add('translate-x-full');
+        setTimeout(() => {
+          menu.classList.add('hidden');
+        }, 300);
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

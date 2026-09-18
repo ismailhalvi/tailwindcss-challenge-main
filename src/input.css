@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Cairo', sans-serif ! important;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ }
+.navbar {
+	overflow: hidden;
+    direction: rtl ! important;
+    font-family: 'Cairo', sans-serif ! important;
+    background-color: #e14a5c ! important; 
+
+}
+.navbar a {
+ 	float: right ! important; 
+	font-size: 16px;
+	color: white ! important;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+      font-family: 'Cairo', sans-serif ! important;
+}
+.d {
+	float: right ! important;
+    overflow: hidden ! important;
+
+}
+	
+.d .d-btn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white ! important;
+    text-align: center;
+    cursor: pointer;
+	padding: 14px 16px;
+	background: inherit;
+	text-transform: uppercase;
+	 font-family: 'Cairo', sans-serif ! important;
+    
+
+}
+
+.navbar a:hover, .d:hover .d-btn {
+	color: rgba(255, 255, 255, 0.789) ! important;
+   font-family: "'Cairo"; 
+
+}
+.d-content {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  background-color: #0D0624 !important;
+  width: 100%;
+  right: 0 !important;
+  z-index: 1200 !important;
+  box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.9) !important;
+  font-family: 'Cairo', sans-serif !important;
+  color: white ! important;
+  border-bottom-left-radius: 5px  !important;
+  border-bottom-right-radius: 5px  !important;
+}
+
+.d:hover .d-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.column {
+	float: right;
+	width: 33.33%;
+	padding: 10px;
+  background-color: #0D0624 !important;
+	height: 250px;
+}
+.column a {
+	display: block ! important;
+	float: none ! important;
+	color: white ! important;
+	text-align: right ! important;
+    padding: 16px ;
+    text-decoration: none ;
+    font-family: 'Cairo', sans-serif ! important;
+
+}
+.column h3 {
+	color: white ! important;
+	padding: 10px;
+    font-family: 'Cairo', sans-serif ! important;
+
+}
+.column a:hover {
+	color: #fff;
+}
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+@media(max-width: 650px){
+	.column {
+		width: 100%;
+		height: auto;
+	}
+}
+.d .d-content .row .column a {
+    text-align: right ;
+    font-family: "'Cairo'";
+    color: white ! important;
+    font-size: 14px ! important;
+}
+.d .d-content .row .column a:hover {
+	color:#e14a5c ! important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
